@@ -11,11 +11,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MojoCMS.ApiService\MojoCMS.ApiService.csproj" />
+    <ProjectReference Include="..\MojoCMS.API\MojoCMS.API.csproj" />
     <ProjectReference Include="..\MojoCMS.Web\MojoCMS.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1" />
+    <PackageReference Include="Aspire.Hosting.NodeJs" Version="8.0.1" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.0.1" />
   </ItemGroup>
 
 </Project>

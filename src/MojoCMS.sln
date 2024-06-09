@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MojoCMS.ApiService", "MojoC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MojoCMS.Web", "MojoCMS.Web\MojoCMS.Web.csproj", "{04683BD1-05CD-4499-8F9E-7CA6C9081317}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MojoCMS.API", "MojoCMS.API\MojoCMS.API.csproj", "{1F5CA7F9-8508-432D-9AFD-CAA3B59CB076}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{04683BD1-05CD-4499-8F9E-7CA6C9081317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04683BD1-05CD-4499-8F9E-7CA6C9081317}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04683BD1-05CD-4499-8F9E-7CA6C9081317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5CA7F9-8508-432D-9AFD-CAA3B59CB076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5CA7F9-8508-432D-9AFD-CAA3B59CB076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5CA7F9-8508-432D-9AFD-CAA3B59CB076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5CA7F9-8508-432D-9AFD-CAA3B59CB076}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
