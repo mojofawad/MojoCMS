@@ -10,9 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MojoCMS.ApiService\MojoCMS.ApiService.csproj" />
     <ProjectReference Include="..\MojoCMS.API\MojoCMS.API.csproj" />
-    <ProjectReference Include="..\MojoCMS.Web\MojoCMS.Web.csproj" />
+    <ProjectReference Include="..\MojoCMS.MigrationService\MojoCMS.MigrationService.csproj" />
   </ItemGroup>
 
   <ItemGroup>

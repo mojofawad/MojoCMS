@@ -1,20 +1,19 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var db = builder.AddPostgres("postgres").AddDatabase("cmsdb");
-// var apiService = builder.AddProject<Projects.MojoCMS_ApiService>("apiservice");
+var pgPassword = builder.AddParameter("postgresql-password", secret: true);
+
+var postgres = builder.AddPostgres("postgres", password: pgPassword)
+    .WithDataVolume();
+var db = postgres.AddDatabase("cmsdb");
 var api = builder.AddProject<Projects.MojoCMS_API>("api")
     .WithReference(db);
 
-// TODO: Build Migrations Service
-
-// builder.AddProject<Projects.MojoCMS_Web>("webfrontend")
-//     .WithExternalHttpEndpoints()
-//     .WithReference(apiService);
+var migrations = builder.AddProject<Projects.MojoCMS_MigrationService>("migrations")
+    .WithReference(db);
 
 
-builder.AddNpmApp("frontend", "MojoCMS.App")
+builder.AddNpmApp("frontend", "../MojoCMS.App")
     .WithReference(api)
-    .WithHttpEndpoint(env: "PORT")
     .WithExternalHttpEndpoints()
     .PublishAsDockerFile();
 

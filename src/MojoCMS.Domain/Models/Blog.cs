@@ -1,4 +1,4 @@
-namespace MojoCMS.API.Models;
+namespace MojoCMS.Domain.Models;
 
 public class Blog
 {
