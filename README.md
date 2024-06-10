@@ -38,10 +38,10 @@ Prior to running the application, the following must be done:
 
 ## Project Structure
 
-- `MojoCMS.App` - The front-end application built with Next.js
-- `MojoCMS.API` - The back-end API built with ASP.NET 
+- `MojoCMS.App` - The frontend application built with Next.js
+- `MojoCMS.API` - The backend API built with ASP.NET 
 - `MojoCMS.AppHost` - Aspire AppHost for quick development (DX QoL)
-- `MojoCMS.MigrationService`
+- `MojoCMS.MigrationService` - A worker service for migrating the database on start
 
 ## Screenshots
 
@@ -50,7 +50,7 @@ Home Page Layout (_WIP_ **2024-06-09**)
 
 ## Notes
 
-At some point it occured to me that it might have been wiser to use a .NET frontend for this project and Next.js for my Personal website. I'm thinking of sticking with Next.js on this project to continue learning Aspire's capabilities with .NET.
+At some point it occured to me that it might have been wiser to use a .NET frontend for this project and Next.js for my personal website. I'm thinking of sticking with Next.js on this project to continue learning Aspire's capabilities with .NET.
 
 ## License
 
