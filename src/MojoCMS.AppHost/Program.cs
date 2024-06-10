@@ -11,7 +11,8 @@ var api = builder.AddProject<Projects.MojoCMS_API>("api")
 var migrations = builder.AddProject<Projects.MojoCMS_MigrationService>("migrations")
     .WithReference(db);
 
-builder.AddNpmApp("frontend", "../MojoCMS.App")
+// TODO: Add conditional for npm run command
+builder.AddNpmApp("frontend", "../MojoCMS.App", "dev")
     .WithReference(api)
     .WithExternalHttpEndpoints()
     .PublishAsDockerFile();

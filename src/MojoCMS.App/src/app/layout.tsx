@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import styles from "./layout.module.css";
+import Header from "./components/header";
+import SideNav from "./components/sidenav";
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      {/* multiple className */}
+      <body className={[inter.className, styles.body].join(' ')}>
+        <Header />
+        <SideNav />
+        <main className={styles.main}>
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
