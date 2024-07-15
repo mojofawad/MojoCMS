@@ -1,6 +1,0 @@
-@MojoCMS.API_HostAddress = http://localhost:5285
-
-GET {{MojoCMS.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
