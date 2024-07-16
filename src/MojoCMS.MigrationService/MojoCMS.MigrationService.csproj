@@ -8,13 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.1" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+        <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MojoCMS.Infrastructure\MojoCMS.Infrastructure.csproj" />
+      <ProjectReference Include="..\MojoCMS.Api\MojoCMS.Api.csproj" />
       <ProjectReference Include="..\MojoCMS.ServiceDefaults\MojoCMS.ServiceDefaults.csproj" />
     </ItemGroup>
 </Project>

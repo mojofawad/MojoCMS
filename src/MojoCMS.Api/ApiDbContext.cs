@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MojoCMS.Domain.Models;
+using MojoCMS.Api.Models;
 
-namespace MojoCMS.Infrastructure;
+namespace MojoCMS.Api;
 
 // TODO: Add Migrations
 public class ApiDbContext(DbContextOptions<ApiDbContext> options) : DbContext(options)

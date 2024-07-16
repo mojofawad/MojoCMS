@@ -3,10 +3,11 @@ using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
-using MojoCMS.Domain.Models;
+
+using MojoCMS.Api;
+using MojoCMS.Api.Models;
 using OpenTelemetry.Trace;
 
-using MojoCMS.Infrastructure;
 
 namespace MojoCMS.MigrationService;
 

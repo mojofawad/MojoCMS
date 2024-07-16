@@ -1,6 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-
-using MojoCMS.Infrastructure;
+using MojoCMS.Api;
 using MojoCMS.MigrationService;
 
 var builder = Host.CreateApplicationBuilder(args);
