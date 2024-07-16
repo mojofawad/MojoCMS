@@ -10,3 +10,16 @@
     border: 1px solid black;
     padding: 5px;
 }
+
+.blogTable{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+.blogTable th,
+.blogTable td,
+.blogTable tr {
+    border: 1px solid black;
+    padding: 5px;
+}
