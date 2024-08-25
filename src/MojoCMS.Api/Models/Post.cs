@@ -5,13 +5,12 @@ namespace MojoCMS.Api.Models;
 public class Post
 {
     public int Id { get; set; }
-    public string Title { get; set; }
-    public string Content { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public DateTime UpdatedAt { get; set; }
-    
-    public Blog Blog { get; set; }
-    public int BlogId { get; set; }
+    public string Title { get; set; } = "";
+    public string Content { get; set; } = "";
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
+    public DateTime UpdatedAt { get; set; } = DateTime.Now;
+    public Blog Blog { get; set; } = null!;
+    public int BlogId { get; set; } 
     public List<Tag> Tags { get; set; }
     
 }
